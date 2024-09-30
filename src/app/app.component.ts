@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { EmailUploadComponent } from './email-upload/email-upload.component';
 
 @Component({
   selector: 'app-root',
+  template: `<app-email-upload></app-email-upload>`,
+  styleUrls: ['./app.component.css'],
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [EmailUploadComponent],
 })
 export class AppComponent {
-  title = 'email-frontend';
+  title = 'Email Upload App';
 }
